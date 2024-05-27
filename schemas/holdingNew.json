@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.company.com/companyNew.schema.json",
+  "type": "object",
+  "properties": {
+    "symbol": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 25
+    },
+    "shares_owned": {
+      "type": "number",
+      "minimum": 0
+    },
+    "cost_basis": {
+      "type": "number",
+      "minimum": 0
+    },
+    "target_percentage": {
+      "type": "number",
+      "minimum": 0
+    },
+    "goal": {
+      "type": "string"
+    },
+    "portfolio_id": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "symbol",
+    "portfolio_id"
+  ]
+}

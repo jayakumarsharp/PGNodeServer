@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.company.com/companyUpdate.schema.json",
+  "type": "object",
+  "properties": {
+    "shares_owned": {
+      "type": "number",
+      "minimum": 0
+    },
+    "cost_basis": {
+      "type": "number",
+      "minimum": 0
+    },
+    "target_percentage": {
+      "type": "number",
+      "minimum": 0
+    },
+    "goal": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": []
+}
